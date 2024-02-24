@@ -1,0 +1,113 @@
+[   
+    {
+        "type": "function",
+        "function": {
+            "name": "update_document",
+            "description": "Update the values of mentioned parameter in the json document",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "args": {
+                        "type": "object",
+                        "description": "An collection of key-value pairs to update in the template. There can be multiple key-value pairs. For example, {'Title': 'How to fix a broken screen', 'Description': 'The screen is broken, SeverityLevel: High'}",
+                        "parameters": {
+                            "Type": {
+                                "type": "string",
+                                "description": "Category of the issue (e.g., Software, Hardware, User Error, Security) "
+                            }, 
+                            "Author": {
+                                "type": "string",
+                                "description": "Name of the author of the Fix document"
+                            }, 
+                            "Title": {
+                                "type": "string",
+                                "description": "Title of the Fix document"
+                            },
+                            "Description": {
+                                "type": "string",
+                                "description": "Description of the issue"
+                            },
+                            "AffectedVersions": {
+                                "type": "array",
+                                "description": "List of affected versions"
+                            },
+                            "TargetAudience": {
+                                "type": "array",
+                                "description": "Target audience for the Fix document"
+                            },
+                            "SkillLevel": {
+                                "type": "string",
+                                "description": "Skill level required to understand and execute the Fix"
+                            },
+                            "Dependencies": {
+                                "type": "array",
+                                "description": "List of dependencies for the Fix"
+                            },
+                            "SeverityLevel": {
+                                "type": "string",
+                                "description": "Severity level of the issue"
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "Status of the issue"
+                            },
+                            "StepstoReproduce": {
+                                "type": "array",
+                                "description": "List of steps to reproduce the issue"
+                            },
+                            "SolutionSteps": {
+                                "type": "array",
+                                "description": "List of steps to fix the issue"
+                            },
+                            "ValidationSteps": {
+                                "type": "array",
+                                "description": "List of steps to validate the fix"
+                            },
+                            "KnownSideEffects": {
+                                "type": "array",
+                                "description": "List of known side effects of the fix"
+                            },
+                            "AdditionalNotes": {
+                                "type": "string",
+                                "description": "Additional notes for the fix"
+                            },
+                            "PublicLinks": {
+                                "type": "array",
+                                "description": "List of public links for the fix"
+                            },
+                            "TagsKeywords": {
+                                "type": "array",
+                                "description": "List of tags or keywords for the fix"
+                            },
+                            "LevelOfEffort": {
+                                "type": "string",
+                                "description": "Level of effort required to fix the issue"
+                            }
+                        },
+                        "enum": [
+                            "Type", 
+                            "Author", 
+                            "Title", 
+                            "Description", 
+                            "AffectedVersions", 
+                            "TargetAudience", 
+                            "SkillLevel", 
+                            "Dependencies", 
+                            "SeverityLevel", 
+                            "Status", 
+                            "StepstoReproduce", 
+                            "SolutionSteps", 
+                            "ValidationSteps", 
+                            "KnownSideEffects", 
+                            "AdditionalNotes", 
+                            "PublicLinks", 
+                            "TagsKeywords", 
+                            "LevelofEffort"
+                        ]
+                    }
+                },
+                "required": ["args"]
+            }
+        }
+    }
+]
